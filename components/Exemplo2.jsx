@@ -18,7 +18,6 @@ export function Exemplo2() {
             setCidade(response.data.localidade)
             setEstado(response.data.estado)
             setUf(response.data.uf)
-            setCidade(response.data.cidade)
         })
        }
     }, [cep] )
