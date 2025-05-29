@@ -13,9 +13,9 @@ export function Exemplo2() {
     useEffect(() => {
        if(cep.length === 8){
         axios.get(`https://viacep.com.br/ws/${cep}/json`).then((response) => {
-            setLougradouro(response.data.lougradouro)
+            setLougradouro(response.data.logradouro)
             setBairro(response.data.bairro)
-            setCidade(response.data.cidade)
+            setCidade(response.data.localidade)
             setEstado(response.data.estado)
             setUf(response.data.uf)
             setCidade(response.data.cidade)
